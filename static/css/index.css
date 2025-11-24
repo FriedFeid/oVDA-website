@@ -86,8 +86,9 @@ body {
     text-decoration: underline;
 }
 
-.author-block {
+.author-block:not(:last-child) {
   display: inline-block;
+  margin-right: 12px;   /* Abstand nach rechts */
 }
 
 .publication-banner img {
