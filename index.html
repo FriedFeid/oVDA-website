@@ -265,23 +265,33 @@
 
         <div class="container" style="text-align: center; ">
             <h2 class="title is-3">Comparison with FlashDepth-s on open-world videos</h2>
+            <div class="columns is-centered has-text-centered">
+                <div class="content has-text-justified">
+
+                    We show in-the-wild results of <a href=https://github.com/Eyeline-Labs/FlashDepth class="link">FlashDepth-s</a> (left) and oVDA (right).
+                    Note that oVDA exhibits less temporal flickering.
+
+                    All videos are processed in the same resolution to ensure fair comparison.
+
+                </div>
+            </div>
             <div id="comparison-carousel-horizontal" class="carousel results-carousel">
 
                 <div class="twoitem">
                     <video muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="./video/Orig_RGB/CarAutobahn.mp4" type="video/mp4">
+                        <source src="video/Orig_RGB/DriftingCars.mp4" type="video/mp4">
                     </video>
                     <div class="twentytwenty-container twentytwenty-container-bottom">
                         <div class="cmpcontent">
                             <video muted autoplay="autoplay" loop="loop" width="100%">
-                                <!--<source src="video/comparison/horsejump-high-da2.mp4" type="video/mp4">-->
-                                <source src="./video/FlashDepth/flashdepth-s-Video_folder-518x924_dataFlashDepth-1-CarAutobahn_depth.mp4" type="video/mp4">
+                                <source src="video/FlashDepth/flashdepth-s-Video_folder-518x924_dataFlashDepth-6-DriftingCars_depth.mp4"
+                                        type="video/mp4">
                             </video>
                         </div>
                         <div class="cmpcontent">
                             <video muted autoplay="autoplay" loop="loop" width="100%">
-                                <!--<source src="video/comparison/horsejump-high-ours.mp4" type="video/mp4">-->
-                                <source src="./video/RGB_SingleDepth/CarAutobahn_518x686_pred.mp4" type="video/mp4">
+                                <source src="video/RGB_SingleDepth/DriftingCars_518x924_pred.mp4"
+                                        type="video/mp4">
                             </video>
                         </div>
                     </div>
@@ -309,45 +319,6 @@
 
                 <div class="twoitem">
                     <video muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="video/Orig_RGB/Longboard.mp4" type="video/mp4">
-                    </video>
-                    <div class="twentytwenty-container twentytwenty-container-bottom">
-                        <div class="cmpcontent">
-                            <video muted autoplay="autoplay" loop="loop" width="100%">
-                                <source src="video/FlashDepth/flashdepth-s-Video_folder-518x924_dataFlashDepth-9-Longboard_depth.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="cmpcontent">
-                            <video muted autoplay="autoplay" loop="loop" width="100%">
-                                <source src="video/RGB_SingleDepth/Longboard_518x924_pred.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="twoitem">
-                    <video muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="video/Orig_RGB/GolfCar.mp4" type="video/mp4">
-                    </video>
-                    <div class="twentytwenty-container twentytwenty-container-bottom">
-                        <div class="cmpcontent">
-                            <video muted autoplay="autoplay" loop="loop" width="100%">
-                                <source src="video/FlashDepth/flashdepth-s-Video_folder-518x924_dataFlashDepth-8-GolfCar_depth.mp4"
-                                        type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="cmpcontent">
-                            <video muted autoplay="autoplay" loop="loop" width="100%">
-                                <source src="video/RGB_SingleDepth/GolfCar_518x924_pred.mp4"
-                                        type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="twoitem">
-                    <video muted autoplay="autoplay" loop="loop" width="100%">
                         <source src="video/Orig_RGB/DrohneCarSite.mp4" type="video/mp4">
                     </video>
                     <div class="twentytwenty-container twentytwenty-container-bottom">
@@ -365,22 +336,22 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="twoitem">
                     <video muted autoplay="autoplay" loop="loop" width="100%">
-                        <source src="video/Orig_RGB/DriftingCars.mp4" type="video/mp4">
+                        <source src="./video/Orig_RGB/CarAutobahn.mp4" type="video/mp4">
                     </video>
                     <div class="twentytwenty-container twentytwenty-container-bottom">
                         <div class="cmpcontent">
                             <video muted autoplay="autoplay" loop="loop" width="100%">
-                                <source src="video/FlashDepth/flashdepth-s-Video_folder-518x924_dataFlashDepth-6-DriftingCars_depth.mp4"
-                                        type="video/mp4">
+                                <!--<source src="video/comparison/horsejump-high-da2.mp4" type="video/mp4">-->
+                                <source src="./video/FlashDepth/flashdepth-s-Video_folder-518x924_dataFlashDepth-1-CarAutobahn_depth.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="cmpcontent">
                             <video muted autoplay="autoplay" loop="loop" width="100%">
-                                <source src="video/RGB_SingleDepth/DriftingCars_518x924_pred.mp4"
-                                        type="video/mp4">
+                                <!--<source src="video/comparison/horsejump-high-ours.mp4" type="video/mp4">-->
+                                <source src="./video/RGB_SingleDepth/CarAutobahn_518x686_pred.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
@@ -420,6 +391,44 @@
                         <div class="cmpcontent">
                             <video muted autoplay="autoplay" loop="loop" width="100%">
                                 <source src="video/RGB_SingleDepth/Cars_and_Gasstation_518x924_pred.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="twoitem">
+                    <video muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="video/Orig_RGB/Longboard.mp4" type="video/mp4">
+                    </video>
+                    <div class="twentytwenty-container twentytwenty-container-bottom">
+                        <div class="cmpcontent">
+                            <video muted autoplay="autoplay" loop="loop" width="100%">
+                                <source src="video/FlashDepth/flashdepth-s-Video_folder-518x924_dataFlashDepth-9-Longboard_depth.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="cmpcontent">
+                            <video muted autoplay="autoplay" loop="loop" width="100%">
+                                <source src="video/RGB_SingleDepth/Longboard_518x924_pred.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="twoitem">
+                    <video muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="video/Orig_RGB/GolfCar.mp4" type="video/mp4">
+                    </video>
+                    <div class="twentytwenty-container twentytwenty-container-bottom">
+                        <div class="cmpcontent">
+                            <video muted autoplay="autoplay" loop="loop" width="100%">
+                                <source src="video/FlashDepth/flashdepth-s-Video_folder-518x924_dataFlashDepth-8-GolfCar_depth.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="cmpcontent">
+                            <video muted autoplay="autoplay" loop="loop" width="100%">
+                                <source src="video/RGB_SingleDepth/GolfCar_518x924_pred.mp4"
                                         type="video/mp4">
                             </video>
                         </div>
